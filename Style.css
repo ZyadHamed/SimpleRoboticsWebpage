@@ -1,0 +1,39 @@
+/*Set the background color and the height of the nav-bar, and stick it in the top*/
+.header 
+{
+    background-color: rgb(0, 144, 245);
+    height: 50px;
+    top: 0px;
+}
+
+/*Remove the underline of the link, give it a background color and some padding to look like a button, and place it in the extreme right*/
+.btnhref 
+{
+    position: absolute;
+    padding: 16px;
+    right: 5px;
+    text-decoration: none;
+    background-color: rgb(0, 144, 245);
+}
+
+/*Change the link's color when mouse gets over it*/
+.btnhref:hover 
+{
+    background-color: aqua;
+}
+
+/*Remove the underline of the link, give it a background color and some padding to look like a button, and place it in the extreme right*/
+.btnAbout 
+{
+    position: absolute;
+    padding: 16px;
+    right: 100px;
+    text-decoration: none;
+    background-color: rgb(0, 144, 245);
+}
+
+/*Change the link's color when mouse gets over it*/
+.btnAbout:hover 
+{
+    background-color: aqua;
+}

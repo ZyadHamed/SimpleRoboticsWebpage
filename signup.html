@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+
+        /*Set the font-size and font-family of each label to 16 and Arial*/
+        label 
+        {
+            font-size: 16px;
+            font-family: Arial;
+        }
+
+        /*Set the font-size and font-family of each label to 16 and Arial, add some margain from top and bottom, add some inner padding, and set the alignment of text to start*/
+        .textbox 
+        {
+            font-size: 16px;
+            font-family: Arial;
+            border-radius: 5px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 5px;
+            text-align: start;
+        }
+
+        /*Set the display of the form to block, such that it takes the whole width. then specify the margains and the actual width*/
+        form 
+        {
+            display: block;
+            width: 50%;
+            margin-left: 40%;
+            margin-top: 50px;
+        }
+
+        /*Add some margain to the main header*/
+        h1
+        {
+            margin-right: 15%
+        }
+    </style>
+    <link rel="stylesheet" href="Style.css"/>
+</head>
+
+<body>
+    <div class="header">
+        <a href="Robotics.html" class="btnhref">Go Back</a>
+    </div>
+    <form>
+
+        <h1>Create an account and join the community</h1>
+
+        <label>First Name</label>
+        <br />
+        <input type="text" class="textbox" />
+        <br />
+
+        <label>Last Name</label>
+        <br />
+        <input type="text" class="textbox" />
+        <br />
+
+        <label>Email</label>
+        <br />
+        <input type="email" class="textbox" placeholder="someone@something.com" />
+        <br />
+
+        <label>Password</label>
+        <br />
+        <input type="password" class="textbox" />
+        <br />
+
+        <label>Gender:</label>
+
+        <label>Male</label>
+        <input type="radio" name="gender" />
+
+        <label>Female</label>
+        <input type="radio" name="gender" />
+
+        <br />
+        <br />
+
+        <input type="submit" />
+        <input type="reset" />
+    </form>
+
+</body>
+
+</html>

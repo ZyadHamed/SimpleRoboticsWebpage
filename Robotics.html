@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Join our robotics team</title>
+    <style>
+
+
+        /*Set the position of main container to relative to allow children in it to be positioed with absolute*/
+        .container 
+        {
+            position: relative;
+        }
+
+        /*Make the Image take the whole width of screen*/
+        .headerImgContainer 
+        {
+            width: 100%;
+        }
+
+        .img 
+        {
+            width: 100%;
+        }
+
+        /*Align the header text to center of the left*/
+        .headTextContainer 
+        {
+            position: absolute;
+            text-align: center;
+            top: 25px;
+            left: 25px;
+        }
+
+        /*Give headers a black color and some margain from top*/
+        h1, h2 
+        {
+            color: #000000;
+            margin-top: 40px;
+        }
+
+        /*Set the apperance of the button and add some border-radius to it*/
+        button 
+        {
+            width: 150px;
+            height: 50px;
+            background-color: aqua;
+            border: 0px;
+            color: blue;
+            border-radius: 5px;
+        }
+
+        /*Make the text take only 65% from the screen and keep the rest of space for images*/
+        .textContainer 
+        {
+            width: 65%;
+            float: left;
+            text-align: left;
+        }
+
+        /*Place the Images in the remaining space*/
+        .imgContainer 
+        {
+            float: left;
+            text-align: right;
+            width: 20%;
+        }
+
+        p 
+        {
+            font-size: 20px;
+        }
+
+        /*Remove the underline of the link, give it a background color and some padding to look like a button, and place it in the extreme right*/
+        .btnAbout 
+        {
+            position: absolute;
+            padding: 16px;
+            right: 100px;
+            text-decoration: none;
+            background-color: rgb(0, 144, 245);
+        }
+
+        /*Change it's color when mouse gets over it*/
+        .btnAbout:hover 
+        {
+            background-color: aqua;
+        }
+    </style>
+    <link rel="stylesheet" href="Style.css" />
+    
+</head>
+<body>
+    <div class="container">
+
+        <div class="header">
+            <a href="signup.html" class="btnhref">Sign Up</a>
+            <a href="About.html" class="btnAbout">About Me</a>
+        </div>
+
+        <div class="headerImgContainer">
+            <img src="https://hackster.imgix.net/uploads/attachments/431181/lego-ev3-img_0994_wjUbPs5d2Y.png?auto=compress&w=900&h=675&fit=min&fm=jpg" class="img" height="600" />
+            <div class="headTextContainer">
+                <h1>Welcome to Megatronics Website</h1>
+                <h2>Your intro into robotics</h2>
+                <button onclick="ScrollToSection2()">Read More</button>
+            </div>
+
+        </div>
+
+        <div class="infoContainer" id="scroll">
+            <h1>Let's talk more about robot types:</h1>
+
+            <div class="EV3">
+                <div class="textContainer">
+                    <h2>1- EV3</h2>
+
+                    <p>
+                        They are the most common type of mindstorms robots produced by lego, and it's the third generation robotics kit produced by lego after RCX and NXT.<br />
+                        it was announced on January 4 2013 and it was released in stores on September 1. with this robot, you can participate in FLL competition, which takes places every year.<br />
+                        they can be programmed using mindstorms EV3 program
+                    </p>
+                </div>
+
+                <div class="imgContainer">
+                    <img src="https://cdn.shopify.com/s/files/1/2298/6635/products/4_0f1dea82-0e47-46cb-9686-3e745e865068_1600x.png?v=1535043314" width="250" height="250" />
+                </div>
+            </div>
+
+            <div class="Arduino">
+                <div class="textContainer">
+                    <h2>2- Arduino</h2>
+
+                    <p>
+                        Arduino board designs use a variety of microprocessors and controllers. The boards are equipped with sets of digital and analog input/output pins that may be expanded by various expansion boards ('shields') or breadboards (for prototyping) and other circuits.<br />
+                        The boards feature serial communications interfaces, including Universal Serial Bus (USB) on some models, which are also used for loading programs from personal computers. <br />
+                        The microcontrollers can be programmed using the C and C++ programming languages, using a standard API which is also known as the "Arduino language", arduino also provides an IDE for programming microcontrollers.
+                    </p>
+
+                </div>
+
+                <div class="imgContainer">
+                    <img src="https://cdn.antratek.nl/media/product/b03/arduino-uno-rev3-a000066-0f4.jpg" width="250" height="250" />
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function ScrollToSection2()
+        {
+            var element = document.getElementById("scroll").scrollIntoView();
+            element.scrollIntoView(true);
+        }
+    </script>
+
+</body>
+</html>
